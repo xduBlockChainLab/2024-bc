@@ -25,19 +25,19 @@
       <div class="group">
         <h1 class="group-title">2021级成员</h1>
         <ul>
-          <li v-for="name in techGroup" :key="name">{{ name }}</li>
+          <li v-for="name in y2021Group" :key="name">{{ name }}</li>
         </ul>
       </div>
       <div class="group">
         <h1 class="group-title">2022级成员</h1>
         <ul>
-          <li v-for="name in appGroup" :key="name">{{ name }}</li>
+          <li v-for="name in y2022Group" :key="name">{{ name }}</li>
         </ul>
       </div>
       <div class="group">
         <h1 class="group-title">2023级成员</h1>
         <ul>
-          <li v-for="name in year2023Group" :key="name">{{ name }}</li>
+          <li v-for="name in y2023Group" :key="name">{{ name }}</li>
         </ul>
       </div>
     </div>
@@ -51,9 +51,9 @@ export default {
   components: {Header},
   data() {
     return {
-      techGroup: ['张三', '李四', '王五'],
-      appGroup: ['赵六', '钱七', '孙八'],
-      year2023Group: ['周九', '吴十', '郑十一']
+      y2021Group: ['张富尧', '魏子翔', '郑屿蓬', '李庆和','覃朗'],
+      y2022Group: ['丁旭阳'],
+      y2023Group: ['王子姗', '姜灿', '沈新旸']
     };
   }
 }
@@ -62,7 +62,7 @@ export default {
 <style scoped>
 .members-page {
   text-align: center;
-  padding: 0 90px;
+  padding: 0 120px;
 }
 .title {
   color: #0056b3;
