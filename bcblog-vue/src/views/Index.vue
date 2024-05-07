@@ -4,11 +4,11 @@
         <div class="pic-container">
             <div class="container-middle">
                 <div class="container-middle-item1">
-                    <div class="welcome"><span class="welcome-span1">西电区块链工作室</span><span class="welcome-span2"></span></div>
+                    <div class="welcome"><span class="welcome-span1">西电区块链协会</span><span class="welcome-span2"></span></div>
                     <div class="welcome2">208链融工作室</div>
                     <div class="welcome3-action">
-                        <button class="wel-btn1" @click="toAction"><span>⚡</span>功能使用</button>
-                        <button class="wel-btn2" @click="toAbout">加入我们</button>
+                        <button class="wel-btn1" @click="toAbout"><span>⚡</span>加入我们</button>
+                        
                     </div>
                     <div class="showVersion">当前版本: v1.0.0</div>
                 </div>
