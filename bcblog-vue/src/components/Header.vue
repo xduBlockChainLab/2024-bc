@@ -6,7 +6,7 @@
                  active-text-color="#2F55D4">
             <el-button type="text" class="head-tag" @click="toIndex"><img src="../assets/geeker-logo.png"/><span>208</span></el-button>
             <el-menu-item index="1" id="item-1" @click="toIndex">主页</el-menu-item>
-            <el-menu-item index="2" id="item-2">任务清单</el-menu-item>
+            <el-menu-item index="2" id="item-2"@click="toAchievement">成果展示</el-menu-item>
             <el-submenu index="3" id="item-3">
                 <template slot="title">工作室管理</template>
                 <el-menu-item index="3-1" >成员页面</el-menu-item>
@@ -115,6 +115,9 @@
             },
             toMembers() {
         this.$router.push({ path: '/members' });
+    },
+    toAchievement() {
+        this.$router.push({ path: '/achievement' });
     },
               quit(){
                 this.$store.commit("QUIT");

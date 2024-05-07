@@ -54,7 +54,13 @@ const routes = [
       name:'Members',
       component: ()=> import('../views/Members')
 
-  }
+  },
+  {
+    path: '/achievement',
+    name:'Achievement',
+    component: ()=> import('../views/Achievement.vue')
+
+}
 
 
 

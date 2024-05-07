@@ -44,6 +44,52 @@
   </div>
 </template>
 
+<template>
+  <div>
+    <Header></Header>
+    <br/><br/><br/><br/>
+    <div class="members-page">
+      <h1 class="title">链融工作室2020级毕业去向</h1>
+      <div class="university-logos" >
+        <div class="logo-container">
+          <img src="@/assets/Uni1logo.jpg" alt="中国科学院大学" class="logo">
+          <p>洪铭锋：中国科学院大学</p>
+        </div>
+        <div class="logo-container">
+          <img src="@/assets/Uni2logo.png" alt="杜克大学" class="logo">
+          <p>王渝普：杜克大学</p>
+        </div>
+        <div class="logo-container">
+          <img src="@/assets/Uni3logo.jpg" alt="宾夕法尼亚大学" class="logo">
+          <p>张云儿：宾夕法尼亚大学</p>
+        </div>
+        <div class="logo-container">
+          <img src="@/assets/Uni4logo.jpg" alt="华为" class="logo">
+          <p>胡雨安：华为</p>
+        </div>
+      </div>
+      <div class="group">
+        <h1 class="group-title">2021级成员</h1>
+        <ul>
+          <li v-for="name in y2021Group" :key="name">{{ name }}</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h1 class="group-title">2022级成员</h1>
+        <ul>
+          <li v-for="name in y2022Group" :key="name">{{ name }}</li>
+        </ul>
+      </div>
+      <div class="group">
+        <h1 class="group-title">2023级成员</h1>
+        <ul>
+          <li v-for="name in y2023Group" :key="name">{{ name }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script>
 import Header from "../components/Header";
 export default {      
